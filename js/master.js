@@ -116,7 +116,7 @@ let landingPage = document.querySelector(".landing-page");
 
 // get array of imgs
 
-let imgsArray = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+let imgsArray = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
 
 // function to randomize imgs
 
@@ -137,35 +137,35 @@ randomizeImgs();
 
 // select skills selector
 
-let ourskills = document.querySelector(".skills");
+// let ourskills = document.querySelector(".skills");
 
-window.onscroll = function () {
-  // Skills offset top
+// window.onscroll = function () {
+//   // Skills offset top
 
-  let skillsOffsetTop = ourskills.offsetTop;
+//   let skillsOffsetTop = ourskills.offsetTop;u
 
-  // Outer height
+//   // Outer height
 
-  let skillsOutterHeigth = ourskills.offsetHeight;
+//   let skillsOutterHeigth = ourskills.offsetHeight;
 
-  // window height
+//   // window height
 
-  let windowheight = this.innerHeight;
+//   let windowheight = this.innerHeight;
 
-  // window scrolltop
+//   // window scrolltop
 
-  let windowscrollTop = this.pageYOffset;
+//   let windowscrollTop = this.pageYOffset;
 
-  if (windowscrollTop > skillsOffsetTop + skillsOutterHeigth - windowheight) {
-    let allskills = document.querySelectorAll(
-      ".skill-box .skill-progress span"
-    );
+//   if (windowscrollTop > skillsOffsetTop + skillsOutterHeigth - windowheight) {
+//     let allskills = document.querySelectorAll(
+//       ".skill-box .skill-progress span"
+//     );
 
-    allskills.forEach((skill) => {
-      skill.style.width = skill.dataset.progress;
-    });
-  }
-};
+//     allskills.forEach((skill) => {
+//       skill.style.width = skill.dataset.progress;
+//     });
+//   }
+// };
 
 // create popup
 
@@ -266,7 +266,7 @@ document.addEventListener("click", function (e) {
 window.addEventListener("scroll", reveal);
 
 function reveal() {
-  var reveals = document.querySelectorAll(".reveal , .f-reveal");
+  var reveals = document.querySelectorAll(".reveal , .f-reveal ,.t-reavel");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowheight = window.innerHeight;
